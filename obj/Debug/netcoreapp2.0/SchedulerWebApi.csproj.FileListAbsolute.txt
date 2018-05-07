@@ -1,0 +1,10 @@
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/bin/Debug/netcoreapp2.0/SchedulerWebApi.deps.json
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/bin/Debug/netcoreapp2.0/SchedulerWebApi.runtimeconfig.json
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/bin/Debug/netcoreapp2.0/SchedulerWebApi.runtimeconfig.dev.json
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/bin/Debug/netcoreapp2.0/SchedulerWebApi.dll
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/bin/Debug/netcoreapp2.0/SchedulerWebApi.pdb
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/obj/Debug/netcoreapp2.0/SchedulerWebApi.csproj.CoreCompileInputs.cache
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/obj/Debug/netcoreapp2.0/SchedulerWebApi.AssemblyInfoInputs.cache
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/obj/Debug/netcoreapp2.0/SchedulerWebApi.AssemblyInfo.cs
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/obj/Debug/netcoreapp2.0/SchedulerWebApi.dll
+/home/kmrnicholson/Code/csharp/SchedulerWebApi/obj/Debug/netcoreapp2.0/SchedulerWebApi.pdb
