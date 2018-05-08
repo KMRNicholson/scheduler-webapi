@@ -44,24 +44,26 @@ namespace SchedulerWebApi.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] User userPayLoad)
         {
+            RequestHelper response = new RequestHelper();
+            
             if(userPayLoad == null)
             {
-                return BadRequest();
+                return response.BadRequest();
             }
 
             User user = GetAll().Where(u => u.Email == userPayLoad.Email).FirstOrDefault();
 
             if(user == null)
             {
-                return NotFound();
+                return response.NotFound();
             }
             else if(user.Password == userPayLoad.Password)
             {
-                return Ok(user);
+                return response.Success(user);
             }
             else
             {
-                return Unauthorized();
+                return response.Unauthorized();
             }
         }    
 
