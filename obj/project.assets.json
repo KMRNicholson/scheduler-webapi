@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kmrnicholson/Code/csharp/SchedulerWebApi/SchedulerWebApi.csproj",
+      "projectUniqueName": "/home/kmrnicholson/Code/csharp/scheduler-webapi/SchedulerWebApi.csproj",
       "projectName": "SchedulerWebApi",
-      "projectPath": "/home/kmrnicholson/Code/csharp/SchedulerWebApi/SchedulerWebApi.csproj",
+      "projectPath": "/home/kmrnicholson/Code/csharp/scheduler-webapi/SchedulerWebApi.csproj",
       "packagesPath": "/home/kmrnicholson/.nuget/packages/",
-      "outputPath": "/home/kmrnicholson/Code/csharp/SchedulerWebApi/obj/",
+      "outputPath": "/home/kmrnicholson/Code/csharp/scheduler-webapi/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
