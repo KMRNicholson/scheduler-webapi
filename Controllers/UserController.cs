@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System;
+using System.Text.RegularExpressions;
+using System.Net.Mail;
 using SchedulerWebApi.Models;
 
 namespace SchedulerWebApi.Controllers
@@ -32,13 +36,25 @@ namespace SchedulerWebApi.Controllers
             return Ok(user);
         }
         
-        [HttpPost]
+        [HttpPost("create")]
         public IActionResult Create([FromBody] User user)
         {
-            _context.Users.Add(user);
-            _context.SaveChanges();
+            RequestHelper response = new RequestHelper();
+            Dictionary<string, object> responseBody = user.ValidateUser(user);
 
-            return CreatedAtRoute("GetUser", new { id = user.Id }, user);
+            if(responseBody.Count()>0) return response.BadRequest(responseBody);
+
+            try
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+            }
+            catch(Exception)
+            {
+                return BadRequest("Failed to create User.");
+            }
+            
+            return response.Success(user);
         }
 
         [HttpPost("login")]
@@ -48,7 +64,7 @@ namespace SchedulerWebApi.Controllers
             
             if(userPayLoad == null)
             {
-                return response.BadRequest();
+                return response.BadRequest(null);
             }
 
             User user = GetAll().Where(u => u.Email == userPayLoad.Email).FirstOrDefault();
