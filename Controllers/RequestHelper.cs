@@ -27,9 +27,9 @@ namespace SchedulerWebApi.Controllers
             return response;
         }
 
-        public ActionResult BadRequest()
+        public ActionResult BadRequest(object value)
         {
-            JsonResult response = new JsonResult(new {});
+            JsonResult response = new JsonResult(value);
             response.StatusCode = 500;
             return response;
         }
