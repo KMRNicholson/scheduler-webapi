@@ -43,7 +43,7 @@ namespace SchedulerWebApi.Models
             {
                 MailAddress m = new MailAddress(user.Email);
             }
-            catch(FormatException)
+            catch(Exception)
             {
                 errors.Add("Email is invalid.");
             }
