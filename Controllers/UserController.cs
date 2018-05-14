@@ -44,6 +44,8 @@ namespace SchedulerWebApi.Controllers
 
             if(responseBody.Count()>0) return response.BadRequest(responseBody);
 
+            user.Email = user.Email.ToLower();
+
             try
             {
                 _context.Users.Add(user);
@@ -67,6 +69,7 @@ namespace SchedulerWebApi.Controllers
                 return response.BadRequest(null);
             }
 
+            userPayLoad.Email = userPayLoad.Email.ToLower();
             User user = GetAll().Where(u => u.Email == userPayLoad.Email).FirstOrDefault();
 
             if(user == null)
