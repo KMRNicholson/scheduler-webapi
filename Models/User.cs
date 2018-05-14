@@ -35,7 +35,7 @@ namespace SchedulerWebApi.Models
             {
                 if(String.IsNullOrWhiteSpace(property.GetValue(user, null)?.ToString() ?? ""))
                 {
-                    errors.Add(property.Name + " is a required field.");
+                    errors.Add("Missing Field.");
                 }
             }
 
@@ -45,10 +45,10 @@ namespace SchedulerWebApi.Models
             }
             catch(Exception)
             {
-                errors.Add("Email is invalid.");
+                errors.Add("Invalid Format.");
             }
 
-            if(!passwordRegex.IsMatch(user.Password)) errors.Add("Password is invalid.");
+            if(!passwordRegex.IsMatch(user.Password)) errors.Add("Invalid Format.");
             
             if(errors.Count() > 0)
             {
