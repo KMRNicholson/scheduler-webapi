@@ -18,3 +18,4 @@
 /home/kmrnicholson/Code/csharp/scheduler-webapi/obj/Debug/netcoreapp2.0/SchedulerWebApi.AssemblyInfo.cs
 /home/kmrnicholson/Code/csharp/scheduler-webapi/obj/Debug/netcoreapp2.0/SchedulerWebApi.dll
 /home/kmrnicholson/Code/csharp/scheduler-webapi/obj/Debug/netcoreapp2.0/SchedulerWebApi.pdb
+/home/kmrnicholson/Code/csharp/scheduler-webapi/obj/Debug/netcoreapp2.0/SchedulerWebApi.csprojResolveAssemblyReference.cache
