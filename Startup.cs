@@ -43,11 +43,9 @@ namespace SchedulerWebApi
             });
             services.AddDbContext<UserContext>(options =>
                 options.UseSqlite("Data Source=Scheduler.Dev.Db"));
+            services.AddDbContext<CourseContext>(options =>
+                options.UseSqlite("Data Source=Scheduler.Dev.Db"));
             services.AddMvc();
-            //services.Configure<MvcOptions>(options =>
-            //{
-            //    options.Filters.Add(new CorsAuthorizationFilterFactory("SiteCorsPolicy"));
-            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

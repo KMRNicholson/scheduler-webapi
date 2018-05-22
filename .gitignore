@@ -1,1 +1,13 @@
 Scheduler.Dev.Db
+bin/Debug/netcoreapp2.0/SchedulerWebApi.deps.json
+bin/Debug/netcoreapp2.0/SchedulerWebApi.dll
+bin/Debug/netcoreapp2.0/SchedulerWebApi.pdb
+bin/Debug/netcoreapp2.0/SchedulerWebApi.runtimeconfig.dev.json
+bin/Debug/netcoreapp2.0/SchedulerWebApi.runtimeconfig.json
+obj/Debug/netcoreapp2.0/SchedulerWebApi.AssemblyInfo.cs
+obj/Debug/netcoreapp2.0/SchedulerWebApi.AssemblyInfoInputs.cache
+obj/Debug/netcoreapp2.0/SchedulerWebApi.csproj.CoreCompileInputs.cache
+obj/Debug/netcoreapp2.0/SchedulerWebApi.csproj.FileListAbsolute.txt
+obj/Debug/netcoreapp2.0/SchedulerWebApi.csprojResolveAssemblyReference.cache
+obj/Debug/netcoreapp2.0/SchedulerWebApi.dll
+obj/Debug/netcoreapp2.0/SchedulerWebApi.pdb
