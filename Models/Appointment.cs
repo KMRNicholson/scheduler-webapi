@@ -10,21 +10,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SchedulerWebApi.Models
 {
-    public class Assignment
+    public class Appointment
     {
         [Key]
         public int Id { get; set; }
         
         [Required]
-        [ForeignKey("Course")]
-        public int CourseId { get; set; }
+        public string Type { get; set; }
         
         [Required]
-        [StringLength(100)]
-        public string Name { get; set; }
+        [DataType(DataType.Time),DisplayFormat(DataFormatString = "{hh:mm}", ApplyFormatInEditMode = true)]
+        public DateTime StartTime { get; set; }
         
         [Required]
-        [DataType(DataType.DateTime),DisplayFormat(DataFormatString = "{yyyy-MM-dd hh:mm}", ApplyFormatInEditMode = true)]
-        public DateTime DueDateTime { get; set; }
+        [DataType(DataType.Time),DisplayFormat(DataFormatString = "{hh:mm}", ApplyFormatInEditMode = true)]
+        public DateTime EndTime { get; set; }
     }
 }
