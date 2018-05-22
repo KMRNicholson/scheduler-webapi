@@ -47,6 +47,8 @@ namespace SchedulerWebApi
                 options.UseSqlite("Data Source=Scheduler.Dev.Db"));
             services.AddDbContext<AssignmentContext>(options =>
                 options.UseSqlite("Data Source=Scheduler.Dev.Db"));
+            services.AddDbContext<AppointmentContext>(options =>
+                options.UseSqlite("Data Source=Scheduler.Dev.Db"));
             services.AddMvc();
         }
 
