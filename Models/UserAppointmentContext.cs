@@ -10,5 +10,11 @@ namespace SchedulerWebApi.Models
         }
 
         public DbSet<UserAppointment> UserAppointments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<UserAppointment>()
+                .HasKey(c => new {c.UserId, c.AppointmentId});
+        }
     }
 }

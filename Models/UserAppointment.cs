@@ -13,10 +13,8 @@ namespace SchedulerWebApi.Models
 {
     public partial class UserAppointment
     {
-        [ForeignKey("User")]
         public int UserId { get; set; }
         
-        [ForeignKey("Appointment")]
         public int AppointmentId { get; set; }
     }
 }
